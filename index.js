@@ -136,10 +136,16 @@ function hit() {
             hitButton.disabled = true;
             standButton.disabled = true;
 
+        } else if (player2Sum > player1Sum) {
+
+            document.getElementById("winner").innerText =
+                "Player 2 Wins!";
+
+            hitButton.disabled = true;
+            standButton.disabled = true;
         }
     }
 }
-
 
 function stand() {
 
